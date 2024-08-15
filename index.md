@@ -2,4 +2,4 @@
 layout: default
 ---
 
-# Welcome
+# Aditya Dindi's Blog
