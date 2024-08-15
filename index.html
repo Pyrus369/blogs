@@ -1,1 +1,75 @@
-<h1>Test</h1>
+<h1 id="custom-cayman-theme">Custom Cayman theme</h1>
+<p><em>Cayman is a Jekyll theme for GitHub Pages. You can <a href="http://tuur29.github.io/pages-themes-cayman">preview the theme to see what it looks like</a>, or even <a href="#usage">use it today</a>.</em></p>
+<p><img alt="Preview" title="Preview" src="https://tuur29.github.io/pages-themes-cayman/preview_green.png" width="280"> <img alt="Preview" title="Preview" src="https://tuur29.github.io/pages-themes-cayman/preview_purple.png" width="280"> <img alt="Preview" title="Preview" src="https://tuur29.github.io/pages-themes-cayman/preview_dark.png" width="280"></p>
+<h2 id="usage">Usage</h2>
+<p>To use the Custom Cayman theme:</p>
+<ol>
+<li><p>Add the following to your site&#39;s <code>_config.yml</code>:</p>
+<pre><code class="lang-yml"><span class="hljs-symbol"> remote_theme:</span> tuur29/pages-themes-cayman
+</code></pre>
+</li>
+<li><p>Optionally, if you&#39;d like to preview your site on your computer, add the following to your site&#39;s <code>Gemfile</code>:</p>
+<pre><code class="lang-ruby"> gem <span class="hljs-string">"github-pages"</span>, <span class="hljs-keyword">group</span>: :jekyll_plugins
+</code></pre>
+</li>
+</ol>
+<h2 id="customizing">Customizing</h2>
+<h3 id="configuration-variables">Configuration variables</h3>
+<blockquote>
+<p>This theme is fully compatible with the stock Cayman theme.</p>
+</blockquote>
+<p>This theme will respect the following variables, if set in your site&#39;s <code>_config.yml</code>:</p>
+<pre><code class="lang-yml">title: [The title <span class="hljs-keyword">of</span> your site]
+description: [A <span class="hljs-built_in">short</span> description <span class="hljs-keyword">of</span> your site<span class="hljs-comment">'s purpose]</span>
+</code></pre>
+<p>Additionally, you may choose to set the following optional variables:</p>
+<pre><code class="lang-yml"><span class="hljs-symbol">show_downloads:</span> [<span class="hljs-string">"true"</span> or <span class="hljs-string">"false"</span> to indicate whether to provide a download URL]
+<span class="hljs-symbol">google_analytics:</span> [Your Google Analytics tracking ID]
+<span class="hljs-symbol">google_analytics_anonymize:</span> false
+<span class="hljs-symbol">darkmode:</span> false
+<span class="hljs-symbol">hide_first_title:</span> false <span class="hljs-meta"># Useful <span class="hljs-meta-keyword">if</span> README.md is used on both github and pages</span>
+<span class="hljs-symbol">logo_url:</span> ./logo.png <span class="hljs-meta"># Either absolute or relative url</span>
+<span class="hljs-symbol">syntax_theme:</span> ./syntax.css <span class="hljs-meta"># Leave empty for default, otherwise link to a pygments stylesheet</span>
+<span class="hljs-symbol">colors:</span>
+<span class="hljs-symbol">    gradient_left:</span> <span class="hljs-string">"#155799"</span>
+<span class="hljs-symbol">    gradient_right:</span> <span class="hljs-string">"#159957"</span>
+<span class="hljs-symbol">    header:</span> <span class="hljs-string">"#fff"</span>
+<span class="hljs-symbol">    android_theme:</span> <span class="hljs-string">"#000"</span> <span class="hljs-meta"># this default to gradient_color</span>
+<span class="hljs-symbol">    link:</span> <span class="hljs-string">"#1e6bb8"</span> <span class="hljs-meta"># this default to gradient_color</span>
+<span class="hljs-symbol">    section_title:</span> <span class="hljs-string">"#155799"</span> <span class="hljs-meta"># this default to gradient_color</span>
+<span class="hljs-symbol">buttons:</span>
+<span class="hljs-symbol">      zip_url:</span> http:<span class="hljs-comment">//example.com/</span>
+<span class="hljs-symbol">      zip_title:</span> Title
+<span class="hljs-symbol">      zip_hide:</span> true
+<span class="hljs-symbol">      tar_url:</span> http:<span class="hljs-comment">//example.com/</span>
+<span class="hljs-symbol">      tar_title:</span> Title
+<span class="hljs-symbol">      tar_hide:</span> true
+<span class="hljs-symbol">      github_hide:</span> true <span class="hljs-meta"># hides <span class="hljs-string">"View on Github"</span></span>
+</code></pre>
+<h3 id="stylesheet">Stylesheet</h3>
+<p>If you&#39;d like to add your own custom styles:</p>
+<ol>
+<li>Create a file called <code>/assets/css/style.scss</code> in your site</li>
+<li>Paste the content of this themes <code>/assets/css/style.scss</code> into your file</li>
+<li>Add any custom CSS (or Sass, including imports) you&#39;d like immediately after the <code>@import</code> line or edit the variables above it (remove <code>!default</code>).</li>
+</ol>
+<p><em>Note: If you&#39;d like to change the theme&#39;s Sass variables, you must set new values before the <code>@import</code> line in your stylesheet.</em></p>
+<h3 id="layouts">Layouts</h3>
+<p>If you&#39;d like to change the theme&#39;s HTML layout:</p>
+<ol>
+<li><a href="https://github.com/tuur29/pages-themes-cayman/blob/master/_layouts/default.html">Copy the original template</a> from the theme&#39;s repository<br />(<em>Pro-tip: click &quot;raw&quot; to make copying easier</em>)</li>
+<li>Create a file called <code>/_layouts/default.html</code> in your site</li>
+<li>Paste the default layout content copied in the first step</li>
+<li>Customize the layout as you&#39;d like</li>
+</ol>
+<h3 id="previewing-the-theme-locally">Previewing the theme locally</h3>
+<p>If you&#39;d like to preview the theme locally (for example, in the process of proposing a change):</p>
+<ol>
+<li>Clone down the theme&#39;s repository (<code>git clone https://github.com/tuur29/pages-themes-cayman</code>)</li>
+<li><code>cd</code> into the theme&#39;s directory</li>
+<li>Run <code>script/bootstrap</code> to install the necessary dependencies</li>
+<li>Run <code>bundle exec jekyll serve</code> to start the preview server</li>
+<li>Visit <a href="http://localhost:4000"><code>localhost:4000</code></a> in your browser to preview the theme</li>
+</ol>
+<h3 id="running-tests">Running tests</h3>
+<p>The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run <code>script/cibuild</code>. You&#39;ll need to run <code>script/bootstrap</code> once before the test script will work.</p>
