@@ -2,7 +2,7 @@ title: Aditya Dindi's Blog
 show_downloads: true
 remote_theme: tuur29/pages-themes-cayman
 color:
-  header: "008000"
+  header: "#008"
   gradient_left: "#e53935"
   gradient_right: "#f57c00"
 logo_url: https://github.githubassets.com/images/icons/emoji/octocat.png
